@@ -1,0 +1,265 @@
+body,div,ul,li,img,input,button,h2,h3,h4,dl,dt,dd,p{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+    font-size: 12px;
+}
+a{
+    color: #444;
+    font-size: 12px;
+    text-decoration: none;
+    outline: none;
+}
+a:hover{
+    color: #008842;
+}
+body{
+    background-color: #f7f9f8;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* header 开始 */
+.header{
+    height: 70px;
+    background-color: #e0e0e0;
+}
+.header .wrap{
+    height: 70px;
+    padding: 15px 0 5px 0;
+}
+.header .wrap .logo{
+    position: relative;
+    float: left;
+}
+.header .wrap .logo a{
+    width: 195px;
+    height: 50px;
+    background: url(../img/header/logo.png) no-repeat;
+    display: block;
+}
+.header .wrap .logo span{
+    color: #008842;
+    width: 56px;
+    height: 28px;
+    left: 240px;
+    font-size: 28px;
+    position: absolute;
+    top: 6px;
+    white-space: normal;
+}
+/* .header .active{
+    z-index: 100;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 46px;
+} */
+/* header 结束 */
+/* login 开始 */
+.login{
+    height: 475px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+.login .wrap .fr{
+    float: right;
+    padding-right: 105px;
+}
+.login .wrap .fr .login-main{
+    width: 308px;
+    padding: 30px 20px 20px;
+    background-color: #fff;
+    border: 1px solid #e3e6e0;
+}
+.login .wrap .fr .login-main p{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #878787;
+    position: relative;
+    overflow: hidden;
+}
+.login .wrap .fr .login-main p strong{
+    color: #262626;
+    font-size: 18px;
+    font-weight: normal;
+}
+.login .wrap .fr .login-main p span{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.login .wrap .fr .login-main p span .reg{
+    text-decoration: underline;
+    color: #008842;
+}
+.login .wrap .fr .login-main .msg{
+    height: auto !important;
+    /* margin: 2px 0 5px; */
+    /* border: 1px solid #E4393c; */
+    /* padding: 3px 10px 3px 40px; */
+    /* line-height: 18px; */
+    /* min-height: 18px; */
+    /* color: #E4393c; */
+}
+.login .wrap .fr .login-main p .icon{
+    left: 1px;
+    top: 1px;
+    width: 40px;
+    height: 38px;
+    background: url(../img/login/bg_input.png) no-repeat;
+}
+.login .wrap .fr .login-main p .phone{
+    background-position: 0 -120px;
+}
+.login .wrap .fr .login-main p .key{
+    background-position: 0 -180px;
+}
+.login .wrap .fr .login-main input{
+    padding-left: 50px;
+    width: 254px;
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    height: 38px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.login .wrap .fr .login-main #ucode{
+    width: 100px;
+    float: left;
+}
+.login .wrap .fr .login-main img{
+    float: left;
+}
+.login .wrap .fr .login-main p .gray{
+    float: left;
+    margin-top: 13px;
+    color: #878787;
+}
+.login .wrap .fr .login-main p .gray:hover{
+    color: #008842;
+}
+.login .wrap .fr .login-main #dl{
+    margin-right: 9px;
+    height: 14px;
+    width: 14px;
+    vertical-align: -1px;
+}
+.login .wrap .fr .login-main p span a{
+    color: #878787;
+    text-decoration: none;
+}
+.login .wrap .fr .login-main p .btn{
+    background: #008842;
+    width: 306px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.login .wrap .fr .login-main .tupic{
+    height: 20px;
+}
+.login .wrap .fr .login-main .tupic a i{
+    display: inline-block;
+    width: 88px;
+    height: 20px;
+    margin-right: 12px;
+    vertical-align: middle;
+    background: url(../img/login/bg_login.png);
+}
+.login .wrap .fr .login-main .tupic .qq i{
+    background-position: -60px -200px;
+}
+.login .wrap .fr .login-main .tupic .sina i{
+    background-position: -160px -200px;
+}
+.login .wrap .fr .login-main .tupic .ay i{
+    background-position: -260px -200px;
+}
+/* login 结束 */
+
+
+/* footer 开始 */
+.footer{
+    clear: both;
+    position: relative;
+    padding-bottom: 20px;
+    clear: both;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+    height: 400px;
+}
+.footer .wrap{
+    margin: 50px auto 0;
+}
+.footer dl{
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+}
+.footer dl dt{
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    color: #444;
+    text-indent: 40px;
+}
+.footer dl .d1{
+    background: url(../img/footer/footer_icon.png) no-repeat left 0%;
+}
+.footer dl .d2{
+    background: url(../img/footer/footer_icon.png) no-repeat left 25%;
+}
+.footer dl .d3{
+    background: url(../img/footer/footer_icon.png) no-repeat left 50%;
+}
+.footer dl .d4{
+    background: url(../img/footer/footer_icon.png) no-repeat left 75%;
+}
+.footer dl .d5{
+    background: url(../img/footer/footer_icon.png) no-repeat left 100%;
+}
+.footer dl dd{
+    height: 110px;
+    border-left: 1px dashed #a8a8a8;
+    padding-left: 20px;
+    margin: 15px 0 0 13px;
+}
+.footer .server{
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px;
+}
+.footer .server span{
+    padding: 0 10px;
+}
+.footer .bottom p{
+    clear: both;
+    color: #717171;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+}
+.footer .bottom p a{
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.footer .bottom p a span{
+    height: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+    color: #939393;
+}
+/* footer 结束 */

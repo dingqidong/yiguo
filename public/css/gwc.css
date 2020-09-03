@@ -1,0 +1,584 @@
+body,div,ul,li,img,input,button,h1,h2,h3,h4,dl,dt,dd,p{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+    font-size: 12px;
+}
+a{
+    color: #444;
+    font-size: 12px;
+    text-decoration: none;
+    outline: none;
+}
+a:hover{
+    color: #008842;
+}
+body{
+    background-color: #f7f9f8;
+}
+/* 滚动条缓冲 */
+html,body{
+    scroll-behavior: smooth;
+}
+/* 顶部导航 开始 */
+.top-nav{
+    position: relative;
+    width: auto;
+    height: 30px;
+    background-color: #f7f9f8;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.topl{
+    float: left;
+}
+.top-nav .topl li{
+    float: left;
+    width: 110px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.top-nav .city{
+    position: relative;
+    color: #008842;
+}
+.top-nav .city-sz{
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.top-nav .city-tit{
+    float: left;
+}
+.top-nav .city-name{
+    position: relative;
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    padding: 0 20px 5px 5px;
+    color: #008842;
+    cursor: pointer;
+}
+.top-nav .city-name s{
+    top: 9px;
+    position: absolute;
+    right: 8px;
+    width: 8px;
+    height: 4px;
+    margin-left: 5px;
+    background: url(../img/header/header-img.png) no-repeat 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: line-through;
+}
+.top-nav .topl img{
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    border: 0;
+}
+.topr{
+    float: right;
+}
+.top-nav .topr li{
+    position: relative;
+    float: right;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+}
+.top-nav .topr li img{
+    vertical-align: middle;
+}
+.top-nav .topr i{
+    width: 28px;
+    height: 30px;
+    display: block;
+    float: left;
+    background: url(../img/header/header-img.png) no-repeat center center;
+}
+.top-nav .topr li:nth-child(4) i{
+    background: url(../img/header/header-img.png) no-repeat 90% center;
+}
+.top-nav .topr li:nth-child(5) i{
+    background: url(../img/header/header-img.png) no-repeat 36% center;
+}
+.top-nav .topr li:nth-child(6) i{
+    background: url(../img/header/header-img.png) no-repeat 20% center;
+}
+.top-nav .topr s{
+    width: 12px;
+    height: 30px;
+    display: block;
+    float: right;
+    background: url(../img/header/header-img.png) no-repeat -2% 115%;
+}
+.top-nav .topr .mod{
+    position: absolute;
+    width: 125px;
+    padding: 10px;
+    top: 30px;
+    left: 0;
+    border: 1px solid #b4c1a3;
+    background-color: #fff;
+    display: none;
+}
+.top-nav .topr .myyiguo{
+    width: 100px;
+    height: 187px;
+    padding: 5px 12px;
+    text-align: left;
+}
+.top-nav .topr .myyiguo a{
+    display: block;
+    line-height: 25px;
+    color: #727272;
+}
+.top-nav .topr .myyiguo a b{
+    margin-left: 10px;
+    padding: 0 5px;
+    color: #fff;
+    background-color: #008842;
+    border-radius: 16px;
+}
+.top-nav .topr li:hover s{
+    transform: rotate(180deg);
+    transform-origin: 70% 50%;
+    transition: transform 0.2s ease-in 0s;
+}
+.top-nav .topr li:nth-child(5):hover,.top-nav .topr li:nth-child(6):hover{
+    background-color: #fff;
+    border-left: 1px solid #b4c1a3;
+    border-right: 1px solid #b4c1a3;
+}
+.top-nav .topr li:hover .mod{
+    display: block;
+    z-index: 20;
+}
+.top-nav .topr .mod .mod-item{
+    margin: 5px 0;
+    width: 125PX;
+    height: 150PX;
+}
+.top-nav .topr .mod .mod-item img{
+    display: block;
+    border: 0;
+    margin: 0;
+    width: 125px;
+    height: 125px;
+}
+/* 顶部导航 结束 */
+/* header 开始 */
+.header{
+    height: 80px;
+    background-color: #e0e0e0;
+}
+.header .wrap{
+    height: 70px;
+    padding: 15px 0 5px 0;
+}
+.header .wrap .logo{
+    position: relative;
+    float: left;
+}
+.header .wrap .logo a{
+    width: 195px;
+    height: 50px;
+    background: url(../img/header/logo.png) no-repeat;
+    display: block;
+}
+.header .wrap .steps{
+    float: right;
+    padding-top: 20px;
+    margin-right: 40px;
+}
+.header .wrap .steps li{
+    position: relative;
+    float: left;
+}
+.header .wrap .steps li b{
+    background: url(../img/gwc/order-step.png) no-repeat;
+    width: 36px;
+    height: 36px;
+    display: block;
+    float: left;
+}
+.header .wrap .steps li .b1{
+    background-position: 0 0;
+}
+.header .wrap .steps li.on .b1{
+    background-position: 0 -44px;
+}
+.header .wrap .steps li .b2{
+    background-position: -42px 0;
+}
+.header .wrap .steps li .b3{
+    background-position: -84px 0;
+}
+.header .wrap .steps li span{
+    position: absolute;
+    top: -20px;
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    right: -62px;
+    color: #333;
+}
+.header .wrap .steps li.on span{
+    color: #008842;
+}
+.header .wrap .steps li i{
+    width: 165px;
+    height: 6px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    display: block;
+    float: left;
+    margin-top: 15px;
+    margin-right: 0;
+    overflow: hidden;
+}
+/* header 结束 */
+/* 购物车 开始 */
+.cart{
+    margin-top: 20px;
+}
+.cart h2{
+    font-weight: normal;
+    height: 38px;
+    line-height: 38px;
+    font-size: 12px;
+    background-color: #fff;
+    border-bottom: 2px solid #05984d;
+    position: relative;
+    background: url(../img/gwc/bg_cart.png) no-repeat 0 0;
+}
+.cart .ct{
+    position: absolute;
+    left: 230px;
+    top: 4px;
+    text-indent: 0;
+}
+.cart .ct .ctsz{
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.cart .ct .ctsz i{
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background: url(../img/gwc/bg_cart.png) no-repeat -80px -40px;
+}
+.cart .ct .cttit{
+    float: left;
+}
+.cart .ct .cttit a{
+    z-index: 100;
+    position: relative;
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    padding: 0 5px 5px 5px;
+    cursor: pointer;
+}
+.cart a.shop{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #008842;
+    text-indent: 0;
+    text-decoration: underline;
+    margin-right: 22px;
+}
+.cart .cartche{
+    border: 1px solid #e3e6e0;
+    border-top: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.cart .cartche table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+.cart .cartche table th{
+    height: 40px;
+    background-color: #f1f1f1;
+    color: #262626;
+    padding: 0 10px;
+    text-align: center;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.cart .cartche table th.cartinfo{
+    width: 271px;
+}
+.cart .cartche table th input{
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.cart .cartche table th.check{
+    text-align: left;
+    width: 151px;
+}
+.cart .cartche table td.check{
+    width: 51px;
+    text-align: center;
+}
+.cart .cartche table th.cartinfo{
+    width: 260px;
+    box-sizing: border-box;
+}
+.cart .cartche table th.ub{
+    width: 95px;
+    box-sizing: border-box;
+}
+.cart .cartche table td{
+    border-top: 1px solid #ebebeb;
+    padding: 10px;
+    text-align: center;
+}
+.cart .cartche table td.img{
+    width: 102px;
+}
+.cart .cartche table td img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ebebeb;
+    position: relative;
+}
+.cart .cartche table td.cartinfo{
+    width: 269px;
+    height: 106px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.cart .cartche table td.ub{
+    width: 75px;
+}
+.cart .cartche table td.cartprice{
+    width: 100px;
+    color: #262626;
+    font-size: 14px;
+}
+.cart .cartche table td.cartnum{
+    width: 110px;
+    color: #262626;
+    font-size: 12px;
+}
+.cart .cartche table .cartnum .quan{
+    position: relative;
+    overflow: hidden;
+    width: 90px;
+    height: 30px;
+}
+.cart .cartche table .cartnum .quan .jian{
+    float: left;
+    width: 18px;
+    height: 24px;
+    /* background: url(../img/gwc/bg_cart.png) no-repeat 0 -40px; */
+}
+.cart .cartche table .cartnum .quan .itxt{
+    position: absolute;
+    left: 22px;
+    top: 0;
+    border: 1px solid #cacbcb;
+    width: 42px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    font-size: 12px;
+    color: #333;
+    outline: none;
+}
+.cart .cartche table .cartnum .quan .jia{
+    float: right;
+    width: 18px;
+    height: 24px;
+    /* background: url(../img/gwc/bg_cart.png) no-repeat -20px -40px; */
+}
+.cart .cartche table td.carttotal{
+    width: 110px;
+    color: #e93005;
+    font-size: 14px;
+}
+.cart .cartche table .cartspec,.cart .cartche table .cartopera{
+    width: 110px;
+    color: #262626;
+    font-size: 12px;
+}
+.cart .cartche .cartfoot{
+    background-color: #f7f7f7;
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+    padding: 10px;
+}
+.cart .cartche .cartfoot::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.cart .cartche .cartfoot .fl{
+    float: left;
+    /* width: 273px; */
+    /* height: 40px; */
+    line-height: 40px;
+}
+.cart .cartche .cartfoot .fl label{
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.cart .cartche .cartfoot .fl input{
+    margin-right: 5px;
+    outline: none;
+}
+.cart .cartche .cartfoot .fl a{
+    margin-left: 20px;
+}
+.cart .cartche .cartfoot .fl a i{
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(../img/gwc/bg_cart.png) no-repeat -100px -40px;
+}
+.cart .cartche .cartfoot .fr{
+    float: right;
+}
+.cart .cartche .cartfoot .wrap{
+    width: 100%;
+}
+.cart .cartche .cartfoot .fr span{
+    margin-right: 20px;
+}
+.cart .cartche .cartfoot .fr #totalCount{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cart .cartche .cartfoot .fr .ub em{
+    color: #249c61;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+}
+.cart .cartche .cartfoot .fr .zj{
+    font-size: 14px;
+}
+.cart .cartche .cartfoot em{
+    color: #ff5317;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0 5px;
+    font-size: 18px;
+}
+.cart .cartche .cartfoot .fr .btn{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #ff5317;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-left: 0;
+    color: #fff;
+}
+/* 购物车 结束 */
+
+
+/* footer 开始 */
+.footer{
+    clear: both;
+    position: relative;
+    padding-bottom: 20px;
+    clear: both;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+    height: 400px;
+}
+.footer .wrap{
+    margin: 50px auto 0;
+}
+.footer dl{
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+}
+.footer dl dt{
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    color: #444;
+    text-indent: 40px;
+}
+.footer dl .d1{
+    background: url(../img/footer/footer_icon.png) no-repeat left 0%;
+}
+.footer dl .d2{
+    background: url(../img/footer/footer_icon.png) no-repeat left 25%;
+}
+.footer dl .d3{
+    background: url(../img/footer/footer_icon.png) no-repeat left 50%;
+}
+.footer dl .d4{
+    background: url(../img/footer/footer_icon.png) no-repeat left 75%;
+}
+.footer dl .d5{
+    background: url(../img/footer/footer_icon.png) no-repeat left 100%;
+}
+.footer dl dd{
+    height: 110px;
+    border-left: 1px dashed #a8a8a8;
+    padding-left: 20px;
+    margin: 15px 0 0 13px;
+}
+.footer .server{
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px;
+}
+.footer .server span{
+    padding: 0 10px;
+}
+.footer .bottom p{
+    clear: both;
+    color: #717171;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+}
+.footer .bottom p a{
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.footer .bottom p a span{
+    height: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+    color: #939393;
+}
+/* footer 结束 */

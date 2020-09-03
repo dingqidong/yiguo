@@ -1,0 +1,247 @@
+body,div,ul,li,img,input,button,h2,h3,h4,dl,dt,dd,p{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+    font-size: 12px;
+}
+a{
+    color: #444;
+    font-size: 12px;
+    text-decoration: none;
+    outline: none;
+}
+a:hover{
+    color: #008842;
+}
+body{
+    color: #444;
+    background-color: #f7f9f8;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* header 开始 */
+.header{
+    height: 70px;
+    background-color: #e0e0e0;
+}
+.header .wrap{
+    height: 70px;
+    padding: 15px 0 5px 0;
+}
+.header .wrap .logo{
+    position: relative;
+    float: left;
+}
+.header .wrap .logo a{
+    width: 195px;
+    height: 50px;
+    background: url(../img/header/logo.png) no-repeat;
+    display: block;
+}
+.header .wrap .logo span{
+    color: #008842;
+    width: 56px;
+    height: 28px;
+    left: 240px;
+    font-size: 28px;
+    position: absolute;
+    top: 6px;
+    white-space: normal;
+}
+/* header 结束 */
+/* reg 开始 */
+.reg{
+    padding-top: 30px;
+}
+.reg .tab{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.reg .tab .tabab{
+    padding: 40px 0 50px;
+    border: 1px solid #a5c9b6;
+    border-top: 0;
+    background-color: #fff;
+}
+.reg .tab .tabab::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fl p{
+    line-height: 38px;
+    margin-bottom: 29px;
+    font-size: 14px;
+}
+.fl p::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fl p .fname{
+    float: left;
+    width: 220px;
+    padding-right: 20px;
+    text-align: right;
+}
+.fl p input{
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    height: 38px;
+    vertical-align: middle;
+    margin-right: 20px;
+    padding-left: 14px;
+    font-size: 14px;
+    float: left;
+    outline: 0;
+}
+.fl p #txyzm,.fl p #phonecode{
+    width: 147px;
+}
+#phone,#upwd,#cpwd,#yqm{
+    background: url(../img/reg/bg_input.png) no-repeat;
+}
+.fl p #phone{
+    width: 290px;
+    background-position: 276px -30px;
+}
+.fl p #btnyzm{
+    color: #008842;
+    display: inline-block;
+    width: 121px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #f7f7f7;
+    border: 1px solid #c1c1c1;
+    margin-right: 20px;
+}
+.fl p #upwd,#cpwd,#yqm{
+    width: 290px;
+    background-position: 276px -70px;
+}
+.fl p img{
+    float: left;
+    line-height: 38px;
+}
+.fl p a{
+    font-size: 14px;
+}
+.fl p label a{
+    color: #008842;
+}
+.fl p #zcbtn{
+    background-color: gray;
+    width: 306px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.reg .fr{
+    width: 330px;
+    height: 340px;
+    padding-top: 50px;
+    font-size: 14px;
+    text-align: center;
+    background: url(../img/reg/register_line.jpg) 0 0 repeat-y;
+    float: right;
+}
+.reg .right{
+    position: absolute;
+    top: 17px;
+    right: 0;
+    font-size: 14px;
+    text-align: right;
+}
+.reg .right a{
+    margin-right: 36px;
+    text-decoration: underline;
+    color: #ef760a;
+}
+/* reg 结束 */
+/* footer 开始 */
+.footer{
+    clear: both;
+    position: relative;
+    padding-bottom: 20px;
+    clear: both;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+    height: 400px;
+}
+.footer .wrap{
+    margin: 50px auto 0;
+}
+.footer dl{
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+}
+.footer dl dt{
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    color: #444;
+    text-indent: 40px;
+}
+.footer dl .d1{
+    background: url(../img/footer/footer_icon.png) no-repeat left 0%;
+}
+.footer dl .d2{
+    background: url(../img/footer/footer_icon.png) no-repeat left 25%;
+}
+.footer dl .d3{
+    background: url(../img/footer/footer_icon.png) no-repeat left 50%;
+}
+.footer dl .d4{
+    background: url(../img/footer/footer_icon.png) no-repeat left 75%;
+}
+.footer dl .d5{
+    background: url(../img/footer/footer_icon.png) no-repeat left 100%;
+}
+.footer dl dd{
+    height: 110px;
+    border-left: 1px dashed #a8a8a8;
+    padding-left: 20px;
+    margin: 15px 0 0 13px;
+}
+.footer .server{
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px;
+}
+.footer .server span{
+    padding: 0 10px;
+}
+.footer .bottom p{
+    clear: both;
+    color: #717171;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+}
+.footer .bottom p a{
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.footer .bottom p a span{
+    height: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+    color: #939393;
+}
+/* footer 结束 */

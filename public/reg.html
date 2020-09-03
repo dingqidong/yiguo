@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+    <!-- header 开始 -->
+    <div class="header">
+        <div class="wrap">
+            <div class="logo">
+                <a href="#" target="_blank"></a>
+                <span>注册</span>
+            </div>
+        </div>
+    </div>
+    <!-- header 结束 -->
+    <!-- reg 开始 -->
+    <div class="reg">
+        <div class="wrap">
+            <div class="tab">
+                <div class="tabab">
+                    <div class="fl">
+                        <p>
+                            <span class="fname">图形验证码</span>
+                            <input onblur="check_txyzm()" id="txyzm" placeholder="图形验证码" type="text">
+                            <!-- <img src="img/reg/verifycode.jpg" alt=""> -->
+                            <!-- <a href="#">换一张</a> -->
+                            <canvas id="canvas" width="120" height="40"></canvas>
+                            <a href="#" id="changeImg">换一张</a>
+                            <span id="txyzm_msg"></span>
+                        </p>
+                        <p>
+                            <span class="fname">手机号</span>
+                            <input onblur="check_phone()" id="phone" placeholder="请输入您的手机号" type="text">
+                            <span id="phone_msg"></span>
+                        </p>
+                        <p>
+                            <span class="fname">手机验证码</span>
+                            <input onblur="check_phonecode()" id="phonecode" placeholder="手机验证码" type="text">
+                            <span id="btnyzm">获取验证码</span>
+                            <!-- <input id="btnyzm" type="button" value="获取验证码"> -->
+                            <span id="phonecode_msg"></span>
+                        </p>
+                        <p>
+                            <span class="fname">设置密码</span>
+                            <input onblur="check_upwd()" id="upwd" placeholder="6-20位字母、符号或数字" type="password">
+                            <span id="upwd_msg"></span>
+                        </p>
+                        <p>
+                            <span class="fname">确认密码</span>
+                            <input onblur="check_cpwd()" id="cpwd" placeholder="再次输入密码" type="password">
+                            <span id="cpwd_msg"></span>
+                        </p>
+                        <p>
+                            <span class="fname">邀请码</span>
+                            <input onblur="check_yqm()" id="yqm" placeholder="邀请码" type="text">
+                            <span id="yqm_msg"></span>
+                        </p>
+                        <p>
+                            <span class="fname">&nbsp;</span>
+                            <label>
+                                <input type="checkbox">我已阅读并同意
+                                <a href="#">《易果服务协议》</a>
+                                <a href="#">《隐私政策》</a>
+                                <span id="check_msg"></span>
+                            </label>
+                        </p>
+                        <span></span>
+                        <p>
+                            <span class="fname">&nbsp;</span>
+                            <input onclick="reg()" id="zcbtn" type="button" disabled value="立即注册"></input>
+                        </p>
+                    </div>
+                    <div class="fr">
+                        <div class="rimg">
+                            <img src="img/reg/register.png" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        我已经注册，现在就
+                        <a href="login.html">登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- reg 结束 -->
+    <!-- footer 开始 -->
+    <div class="footer">
+        <div class="wrap">
+            <dl>
+                <dt class="d1">新手指南</dt>
+                <dd>
+                    <p>
+                        <a href="#">账户注册</a>
+                    </p>
+                    <p>
+                        <a href="#">购物流程</a>
+                    </p>
+                    <p>
+                        <a href="#">订购方式</a>
+                    </p>
+                    <p>
+                        <a href="#">悠币说明</a>
+                    </p>
+                    <p>
+                        <a href="#">会员等级</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="d2">付款方式</dt>
+                <dd>
+                    <p>
+                        <a href="#">支付方式/发票说明</a>
+                    </p>
+                    <p>
+                        <a href="#">礼品卡章程</a>
+                    </p>
+                    <p>
+                        <a href="#">优惠代码</a>
+                    </p>
+                    <p>
+                        <a href="#">卡券购买章程</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="d3">配送方式</dt>
+                <dd>
+                    <p>
+                        <a href="#">配送运费</a>
+                    </p>
+                    <p>
+                        <a href="#">时间及范围</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="d4">售后服务</dt>
+                <dd>
+                    <p>
+                        <a href="#">退换货政策</a>
+                    </p>
+                    <p>
+                        <a href="#">退换货流程</a>
+                    </p>
+                    <p>
+                        <a href="#">常见问题</a>
+                    </p>
+                    <p>
+                        <a href="#">极速退款</a>
+                    </p>
+                    <p>
+                        <a href="#">投诉与建议</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="d5">关于我们</dt>
+                <dd>
+                    <p>
+                        <a href="#">公司介绍</a>
+                    </p>
+                    <p>
+                        <a href="#">联系我们</a>
+                    </p>
+                    <p>
+                        <a href="#">业务合作</a>
+                    </p>
+                    <p>
+                        <a href="#">诚信举报</a>
+                    </p>
+                    <p>
+                        <a href="#">用户协议</a>
+                    </p>
+                    <p>
+                        <a href="#">隐私协议</a>
+                    </p>
+                    <p>
+                        <a href="#">友情链接</a>
+                    </p>
+                </dd>
+            </dl>
+            <div class="server">
+                <span>客服热线 400-000-7788</span>
+                <span>周一至周日 9:00-21:00</span>
+            </div>
+            <div class="bottom">
+                <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+                <p>沪ICP备09008015号 Copyright © 2005-2020 版权所有</p>
+                <p>
+                    <a href="#">
+                        <img src="img/footer/xfwq.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/footer_copy.jpg" height="47px" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/ghs.png" height="47px" alt="">
+                    </a>
+                    <a href="#">
+                        <span>沪公网安备 31010502000002</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- footer 结束 -->
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/reg.js"></script>
+</html>

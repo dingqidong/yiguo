@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- header 开始 -->
+    <div class="header">
+        <div class="wrap">
+            <div class="logo">
+                <a href="#" target="_blank"></a>
+                <span>登录</span>
+            </div>
+        </div>
+    </div>
+    <!-- header 结束 -->
+    <!-- login 开始 -->
+    <div class="login">
+        <div class="wrap">
+            <div class="fr">
+                <div class="login-main">
+                    <p>
+                        <strong>欢迎登陆</strong>
+                        <span>还没有账号？
+                            <a class="reg" href="reg.html">立即注册</a>
+                        </span>
+                    </p>
+                    <div>
+                        <span id="phone_msg"></span>
+                        <span id="upwd_msg"></span>
+                        <span id="ucode_msg"></span>
+                    </div>
+                    <p>
+                        <span class="icon phone"></span>
+                        <input onblur="check_phone()" id="phone" placeholder="邮箱/账号/已验证手机" type="text">
+                    </p>
+                    <p>
+                        <span class="icon key"></span>
+                        <input onblur="check_upwd()" id="upwd" placeholder="密码" type="password">
+                    </p>
+                    <p>
+                        <span class="icon key"></span>
+                        <input onblur="check_ucode()" id="ucode" placeholder="验证码" type="text">
+                        <img src="img/login/verifycode.jpg" alt="">
+                        <a class="gray" href="#">换一张</a>
+                    </p>
+                    <p>
+                        <label>
+                            <input id="dl" type="checkbox">自动登录
+                        </label>
+                        <span>
+                            <a class="findpwd" href="#">忘记登录密码？</a>
+                        </span>
+                    </p>
+                    <p>
+                        <a onclick="login()" class="btn" href="#">登&nbsp;录</a>
+                    </p>
+                    <p>第三方登录</p>
+                    <div class="tupic">
+                        <a href="#" class="qq">
+                            <i></i>
+                        </a>
+                        <a href="#" class="sina">
+                            <i></i>
+                        </a>
+                        <a href="#" class="ay">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login 结束 -->
+    <!-- footer 开始 -->
+    <div class="footer">
+        <div class="wrap">
+            <dl>
+                <dt class="d1">新手指南</dt>
+                <dd>
+                    <p>
+                        <a href="#">账户注册</a>
+                    </p>
+                    <p>
+                        <a href="#">购物流程</a>
+                    </p>
+                    <p>
+                        <a href="#">订购方式</a>
+                    </p>
+                    <p>
+                        <a href="#">悠币说明</a>
+                    </p>
+                    <p>
+                        <a href="#">会员等级</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="d2">付款方式</dt>
+                <dd>
+                    <p>
+                        <a href="#">支付方式/发票说明</a>
+                    </p>
+                    <p>
+                        <a href="#">礼品卡章程</a>
+                    </p>
+                    <p>
+                        <a href="#">优惠代码</a>
+                    </p>
+                    <p>
+                        <a href="#">卡券购买章程</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="d3">配送方式</dt>
+                <dd>
+                    <p>
+                        <a href="#">配送运费</a>
+                    </p>
+                    <p>
+                        <a href="#">时间及范围</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="d4">售后服务</dt>
+                <dd>
+                    <p>
+                        <a href="#">退换货政策</a>
+                    </p>
+                    <p>
+                        <a href="#">退换货流程</a>
+                    </p>
+                    <p>
+                        <a href="#">常见问题</a>
+                    </p>
+                    <p>
+                        <a href="#">极速退款</a>
+                    </p>
+                    <p>
+                        <a href="#">投诉与建议</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="d5">关于我们</dt>
+                <dd>
+                    <p>
+                        <a href="#">公司介绍</a>
+                    </p>
+                    <p>
+                        <a href="#">联系我们</a>
+                    </p>
+                    <p>
+                        <a href="#">业务合作</a>
+                    </p>
+                    <p>
+                        <a href="#">诚信举报</a>
+                    </p>
+                    <p>
+                        <a href="#">用户协议</a>
+                    </p>
+                    <p>
+                        <a href="#">隐私协议</a>
+                    </p>
+                    <p>
+                        <a href="#">友情链接</a>
+                    </p>
+                </dd>
+            </dl>
+            <div class="server">
+                <span>客服热线 400-000-7788</span>
+                <span>周一至周日 9:00-21:00</span>
+            </div>
+            <div class="bottom">
+                <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+                <p>沪ICP备09008015号 Copyright © 2005-2020 版权所有</p>
+                <p>
+                    <a href="#">
+                        <img src="img/footer/xfwq.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/footer_copy.jpg" height="47px" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/ghs.png" height="47px" alt="">
+                    </a>
+                    <a href="#">
+                        <span>沪公网安备 31010502000002</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- footer 结束 -->
+</body>
+<script type="text/javascript" src="js/login.js"></script>
+</html>
